@@ -1,0 +1,206 @@
+form{
+    position: relative;
+    background: var(--dark);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 25px 25px 50px rgba(9,148,255,0.25),
+                -10px -10px 30px rgba(9,148,255,0.1),
+                inset -5px -5px 15px rgba(9,148,255,0.5);
+  }
+
+#formcontactdiv{
+    position: relative;
+    margin-bottom: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+
+input{
+    border: 0;
+    background-color: transparent;
+    border-bottom:2px solid var(--blue);
+    width: 300px;
+    color: var(--light);
+}
+
+label{
+    position:absolute;
+	top:0px;
+	left:0px;
+	font-size:20px;
+	color:var(--light);	
+	transition: all 0.5s ease-in-out;
+}
+
+input:focus{ 
+    border:none;	
+    outline:none;
+    border-bottom:1px solid var(--light);	
+}
+
+input:focus ~ label,
+input:valid ~ label{
+	top:-15px;
+	font-size:15px;
+	
+}
+
+textarea{
+    margin-top: 50px;
+    resize: none;
+    width: 300px;
+    height: 200px;
+    background-color: transparent;
+    color: var(--light);
+    border-color: var(--blue);
+    border: 2px solid var(--blue);
+}
+
+#textarealabel{
+    transition: none;
+    top: 10px;
+}
+
+
+#contactbutton{
+	position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+	padding: 10px 30px;
+    border: 0;
+    background-color: transparent;
+	color: var(--blue);
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
+	overflow: hidden;
+	transition: 0.5s;
+}
+#contactbutton:nth-child(1){
+	filter: hue-rotate(115deg);
+}
+#contactbutton:nth-child(3){
+	filter: hue-rotate(270deg);
+}
+#contactbutton:hover{
+	transition-delay: 0.5s;
+	background: var(--blue);
+	color: var(--light);
+	box-shadow: 0 0 50px var(--blue);
+}
+#contactbutton:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid var(--blue);
+	border-left: 2px solid var(--blue);
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+#contactbutton:hover:before{
+	width: 100%;
+	height: 100%;
+	transition-delay: 0s;
+}
+#contactbutton:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 10px;
+	height: 10px;
+	border-bottom: 2px solid var(--blue);
+	border-right: 2px solid var(--blue);
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+#contactbutton:hover:after{
+	width: 100%;
+	height: 100%;
+	transition-delay: 0s;
+}
+
+
+#containersocial{
+    position: relative;
+    background: var(--light);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 25px 25px 50px rgba(9,148,255,0.25),
+                -10px -10px 30px rgba(9,148,255,0.1),
+                inset -5px -5px 15px rgba(9,148,255,0.5);
+  }
+  
+  
+  #socialul {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+  }
+  #socialul li{
+      position: relative;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      list-style: none;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.5s;
+  }
+  #socialul li::before{
+      content: '';
+      position: absolute;
+      inset: 30px;
+      box-shadow: 0 0 0 10px var(--blue),
+      0 0 0 20px var(--light),
+      0 0 0 22px var(--blue);
+      transition: 0.5s;
+  }
+  #socialul li:hover::before{
+      inset: 0px;
+  }
+  #socialul li::after{
+      content: '';
+      position: absolute;
+      inset: 0px;
+      background: var(--light);
+      transform: rotate(45deg);
+  }
+  #socialul li a{
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--blue);
+      z-index: 10;
+      font-size: 2em;
+      transition: 0.5s;
+  }
+  #socialul li:hover a{
+      font-size: 3.5em;
+  }
+  #socialul li:hover{
+      transform: scale(0.75);
+      z-index: 10000;
+  }

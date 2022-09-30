@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+
+:root{
+    --blue: #0066cc;
+    --dark: #252729;
+    --light: #E3E3E3;
+}
+
+
+body {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,102,204,1) 50%, rgba(0,0,0,1) 100%);
+    background-size: cover;
+    font-family: 'Signika Negative', sans-serif;
+}

@@ -1,0 +1,120 @@
+h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    color :var(--light);
+    text-shadow: 0 0 20px var(--blue);
+    margin: 0;
+}
+
+#hrnavbar{
+    border-radius: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 5px;
+    box-shadow: 0 0 20px var(--blue);
+    color: var(--light);
+    opacity: 1;
+    margin: 0;
+    margin-right: 10px;
+}
+.navbar-light .navbar-toggler{
+    color: var(--light) !important;
+    border-color: var(--light);
+    margin-left: 30px;
+}
+
+#navbar{
+    background-color: transparent;
+}
+
+#containernavbar{
+    margin: 0;
+    justify-content: left;
+}
+
+
+
+@media (max-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link{
+        margin-top: 30px;
+    }    
+}
+
+#buttonnavbar
+{
+	position: relative;
+	background: var(--light);
+	color: var(--blue);
+    border: 2px solid var(--blue);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	padding: 10px 30px;
+    margin-left: 15px;
+	transition: 0.5s;
+}
+#buttonnavbar:hover 
+{
+	background: var(--light);
+	color: var(--blue);
+	box-shadow: 0 0 35px var(--light);
+    border: 2px solid var(--blue);
+}
+#buttonnavbar:before 
+{
+	content: '';
+	inset: 2px;
+}
+#buttonnavbar span 
+{
+	position: relative;
+	z-index: 1;
+}
+#buttonnavbar i 
+{
+	position: absolute;
+	inset: 0;
+	display: block;
+}
+#buttonnavbar i::before 
+{
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: 80%;
+	width: 15px;
+	height: 10px;
+	background: var(--light);
+	transform: translateX(-50%);
+	border: 2px solid var(--blue);
+	transition: 0.5s;
+}
+#buttonnavbar:hover i::before 
+{
+	width: 20px;
+	left: 20%;
+    background: var(--light);
+	border: 2px solid var(--blue);
+}
+#buttonnavbar i::after 
+{
+	content: '';
+	position: absolute;
+	bottom: -6px;
+	left: 20%;
+	width: 15px;
+	height: 10px;
+	background: var(--light);
+	transform: translateX(-50%);
+	border: 2px solid var(--blue);
+	transition: 0.5s;
+}
+#buttonnavbar:hover i::after 
+{
+	width: 20px;
+	left: 80%;
+    background: var(--light);
+	border: 2px solid var(--blue);
+}
